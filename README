@@ -18,3 +18,18 @@ The three solution files called Task1Solution.csv, Task2Solution.csv, and
 Task3Solution.csv -> found in the ./output directory
 
 The source files for your data product -> found in the ./src directory
+
+###
+# Mahout instructions
+###
+This describes how to compile Mahout, required for task3.
+
+1) Get a copy of Mahout 0.8 and extract it into ~/ds-shorsman
+
+2) cp ~/ds-shorsman/src/main/java/ccp/shorsman/mahout/PredictorEvaluator.java 
+into ~/mahout/core/src/main/java/org/apache/mahout/cf/taste/hadoop/als
+
+2) cp  ~/ds-shorsman/src/main/java/ccp/shorsman/mahout/*.props 
+into ~/mahout/src/conf
+
+3) cd ~/mahout; mvn clean install
