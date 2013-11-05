@@ -1,0 +1,129 @@
+{
+  "stats" : [ {
+    "name" : "sessionid"
+  }, {
+    "name" : "login",
+    "numeric" : {
+      "min" : 0.0,
+      "max" : 10.0,
+      "mean" : 1.294970143060342,
+      "stdDev" : 2.792038261368888
+    }
+  }, {
+    "name" : "logout",
+    "numeric" : {
+      "min" : 0.0,
+      "max" : 54.0,
+      "mean" : 2.6219718672403576,
+      "stdDev" : 8.431371807656685
+    }
+  }, {
+    "name" : "account",
+    "numeric" : {
+      "min" : 0.0,
+      "max" : 56.0,
+      "mean" : 0.39097168749958394,
+      "stdDev" : 2.744140479956765
+    }
+  }, {
+    "name" : "rate",
+    "numeric" : {
+      "min" : 0.0,
+      "max" : 83.0,
+      "mean" : 1.3417582198118714,
+      "stdDev" : 4.089809087608419
+    }
+  }, {
+    "name" : "queue",
+    "numeric" : {
+      "min" : 0.0,
+      "max" : 656.0,
+      "mean" : 18.334138098608896,
+      "stdDev" : 65.29735296261595
+    }
+  }, {
+    "name" : "resume",
+    "numeric" : {
+      "min" : 0.0,
+      "max" : 6500.0,
+      "mean" : 33.64538698632417,
+      "stdDev" : 78.8139920302824
+    }
+  }, {
+    "name" : "home",
+    "numeric" : {
+      "min" : 0.0,
+      "max" : 71.0,
+      "mean" : 6.929390723157047,
+      "stdDev" : 4.795631682824564
+    }
+  }, {
+    "name" : "hover",
+    "numeric" : {
+      "min" : 0.0,
+      "max" : 3649.0,
+      "mean" : 29.078293749681016,
+      "stdDev" : 18.644883932797043
+    }
+  }, {
+    "name" : "pause"
+  }, {
+    "name" : "stop",
+    "numeric" : {
+      "min" : 0.0,
+      "max" : 147.0,
+      "mean" : 18.194852312997476,
+      "stdDev" : 20.60163955379119
+    }
+  }, {
+    "name" : "recommendations",
+    "numeric" : {
+      "min" : 0.0,
+      "max" : 45.0,
+      "mean" : 1.3963994150658272,
+      "stdDev" : 2.9109776545549986
+    }
+  }, {
+    "name" : "search",
+    "numeric" : {
+      "min" : 0.0,
+      "max" : 45.0,
+      "mean" : 1.404101640079086,
+      "stdDev" : 2.9943327603677803
+    }
+  }, {
+    "name" : "tvduration",
+    "numeric" : {
+      "min" : 0.0,
+      "max" : 34338.0,
+      "mean" : 1509.5221247578493,
+      "stdDev" : 3820.134885539684
+    }
+  }, {
+    "name" : "tvcount",
+    "numeric" : {
+      "min" : 0.0,
+      "max" : 15.0,
+      "mean" : 1.0998093860188307,
+      "stdDev" : 2.6312516378430866
+    }
+  }, {
+    "name" : "movieduration",
+    "numeric" : {
+      "min" : 0.0,
+      "max" : 51924.0,
+      "mean" : 3793.4557138704404,
+      "stdDev" : 4407.907328653241
+    }
+  }, {
+    "name" : "moviecount",
+    "numeric" : {
+      "min" : 0.0,
+      "max" : 25.0,
+      "mean" : 1.2640613870218285,
+      "stdDev" : 2.0587241318984817
+    }
+  } ],
+  "recordCount" : 450649,
+  "fieldCount" : 15
+}

@@ -1,0 +1,37 @@
+#!/bin/bash
+
+HP=${HADOOP_PREFIX:?"Need to set HADOOP_PREFIX to client-side hadoop base dir"}
+HH=${HIVE_HOME:="__none__"}
+
+BASEDIR=$(dirname $0)
+TARGET=$BASEDIR/../target
+MAINJAR=$TARGET/ml-client-0.1.0.jar
+LJ=$TARGET/lib/*.jar
+
+if [ ! -e $MAINJAR ]
+then
+  echo "You need to run 'mvn clean install' to install the client jars"
+  exit 1
+fi
+
+if [ -d $HH ]
+then
+  function join() {
+    local IFS=$1
+    shift
+    echo "$*"
+  }
+  HL=$HH/lib
+  HIVEJARS=$(join ',' $HL/antlr-runtime-* $HL/hive-exec-* $HL/hive-metastore-* $HL/jdo2-api-* $HL/libfb303-* $HL/libthrift-* $HL/slf4j-api-*)
+  LIBJARS=$(echo ${LJ} | tr " " ",")
+  export LIBJARS=$LIBJARS,$HIVEJARS
+  LJ_CLASSPATH=`echo ${LIBJARS} | sed s/,/:/g`
+  HIVE_CONF=$HH/conf
+  export HADOOP_CLASSPATH=$LJ_CLASSPATH:$HIVE_CONF
+else
+  echo "HIVE_HOME not set, Hive features are disabled."
+  export LIBJARS=$(echo ${LJ} | tr " " ",")
+  export HADOOP_CLASSPATH=`echo ${LIBJARS} | sed s/,/:/g`
+fi
+
+$HP/bin/hadoop jar $MAINJAR com.cloudera.science.ml.client.Main -libjars ${LIBJARS} $@

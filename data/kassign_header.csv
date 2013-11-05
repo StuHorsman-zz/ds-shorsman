@@ -1,0 +1,4 @@
+vector_id,identifier
+clustering_id,symbolic
+closest_center_id,symbolic
+squared_distance,continuous

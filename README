@@ -1,0 +1,20 @@
+####
+# README - ccp data challenge
+# Stuart Horsman (stuart.horsman@gmail.com
+###
+
+Please read this to get started.  The data product contains the following
+as requested by the submission procedure:
+
+An abstract in PDF format that describes your approach to solving each of the 
+three parts of the challenge. Please limit the length of the abstract to 
+5 pages. -> found in ./docs/Abstract.pdf
+
+Instructions for running your data product -> found in ./docs/Instructions.pdf
+
+Any binary files for running your data product -> found in the ./bin directory
+
+The three solution files called Task1Solution.csv, Task2Solution.csv, and 
+Task3Solution.csv -> found in the ./output directory
+
+The source files for your data product -> found in the ./src directory

@@ -1,0 +1,17 @@
+sessionid,identifier
+login,numeric
+logout,numeric
+account,numeric
+rate,numeric
+queue,numeric
+resume,numeric
+home,numeric
+hover,numeric
+pause,ignored
+stop,numeric
+recommendations,numeric
+search,numeric
+tvduration,numeric
+tvcount,numeric
+movieduration,numeric
+moviecount,numeric
