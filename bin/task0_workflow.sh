@@ -31,6 +31,7 @@ tar -xvzf ../data/jeckle.tar.gz -C ../data
 echo "Upload weblog data to hdfs ds-shorsman/incoming..."
 hadoop fs -rm -f -r -skipTrash ds-shorsman/incoming
 hadoop fs -rm -f -r -skipTrash ds-shorsman/outgoing
+hadoop fs -mkdir ds-shorsman
 hadoop fs -mkdir ds-shorsman/incoming
 hadoop fs -mkdir ds-shorsman/outgoing
 hadoop fs -put ../data/heckle ds-shorsman/incoming

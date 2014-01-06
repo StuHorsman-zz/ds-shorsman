@@ -10,10 +10,10 @@ rm(list=ls())
 
 library(scatterplot3d)
 library(rgl)
-source('psFunctions.R')
+source('~/Cloudera/ds-shorsman/Rscripts/psFunctions.R')
 
-data <- read.csv("/home/stuart/ds-shorsman/data/Task2Data.csv")
-results <- read.csv("/home/stuart/ds-shorsman/data/Task2Results.csv", 
+data <- read.csv("~/Cloudera/ds-shorsman/data/Task2Data.csv")
+results <- read.csv("~/Cloudera/ds-shorsman/data/Task2Results.csv", 
                     stringsAsFactors=FALSE)
 
 names(results) <- c("sessionId", "id", "cluster", "distance")

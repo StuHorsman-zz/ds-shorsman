@@ -14,7 +14,7 @@ library(caret)
 # task1.file contains our training data
 # all_user.file contains all user movie play counts to be scored
 # scores.file will contain the user_id and class
-data.dir <- "~/ds-shorsman/data/"
+data.dir <- "~/Cloudera/ds-shorsman/data/"
 task1.file <- paste0(data.dir, 'task1_training_data.csv')
 
 # Read in the training data
@@ -148,4 +148,4 @@ validate.predict.resp <- predict(glm.model.train, validate.predictors, type="res
 plot(validate.predict.resp[, 100])
 
 # Save the model
-save.image("~/ds-shorsman/data/Task1Solution.RData")
+save.image("~/Cloudera/ds-shorsman/data/Task1Solution.RData")
