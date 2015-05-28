@@ -29,7 +29,7 @@ This describes how to compile Mahout, required for task3.
      
 		cp ~/ds-shorsman/src/main/java/ccp/shorsman/mahout/PredictorEvaluator.java ~/mahout/core/src/main/java/org/apache/mahout/cf/taste/hadoop/als
  
- 3. Copy properties files into src/conf:
+3. Copy properties files into src/conf:
  
 
 		cp ~/ds-shorsman/src/main/java/ccp/shorsman/mahout/*.props ~/mahout/src/conf
